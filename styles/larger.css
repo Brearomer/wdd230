@@ -1,0 +1,43 @@
+@media only screen and (min-width: 33rem) {
+
+nav{
+    background-color: darkviolet;
+    margin: auto;
+    max-width: 800px;
+}
+
+.nav ul{
+    list-style-type: none;
+}
+
+nav a{
+    display:block;
+    color:deeppink;
+    text-align: center; 
+    padding: 1rem;
+    text-decoration: none;
+} 
+
+.nav a:hover{
+    border:1px solid white;
+}
+
+.active{
+    color: grey;
+} 
+
+@media (min-width: 640px){
+    nav ul{
+       display: flex; 
+    } 
+
+    nav ul li{
+        flex: 1 1 100%;
+    }
+}
+
+
+
+
+
+}
