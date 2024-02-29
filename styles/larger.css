@@ -3,7 +3,7 @@
     .parent {
         display: grid;
         grid-template-columns: 2fr 1fr;
-        columns-gap:10px;
+        column-gap: 10px;
     }
 
     .parent section{
