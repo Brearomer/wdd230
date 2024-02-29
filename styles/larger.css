@@ -1,40 +1,24 @@
-@media only screen and (min-width: 33rem) {
+@media only screen and (min-width: 37rem) {
 
-nav{
-    background-color: darkviolet;
-    margin: auto;
-    max-width: 800px;
-}
-
-.nav ul{
-    list-style-type: none;
-}
-
-nav a{
-    display:block;
-    color:deeppink;
-    text-align: center; 
-    padding: 1rem;
-    text-decoration: none;
-} 
-
-.nav a:hover{
-    border:1px solid white;
-}
-
-.active{
-    color: grey;
-} 
-
-@media (min-width: 640px){
-    nav ul{
-       display: flex; 
-    } 
-
-    nav ul li{
-        flex: 1 1 100%;
+    .parent {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        columns-gap:10px;
     }
-}
+
+    .parent section{
+        box-shadow: 1px 1px 10px black;
+    }
+
+    @media (min-width: 640px) {
+        nav ul {
+            display: flex;    
+        } 
+
+        nav ul li{
+            flex: 1 1 100%;
+        }
+    }
 
 
 
