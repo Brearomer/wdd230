@@ -3,7 +3,7 @@ body{
    font-family: "Roboto", sans-serif;
     color:black; 
    text-decoration: none; 
-   background-image:linear-gradient(pink, white); 
+   background-color: white; 
    display: grid;
    grid-template-rows: 80px 200px;
       
@@ -11,7 +11,7 @@ body{
 
 header{
     color: purple;
-    background-color: lightgrey;
+    background-color: deeppink;
     font-family: "Roboto", sans-serif;
     font-weight: 300;;
     display:block;
