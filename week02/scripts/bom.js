@@ -4,12 +4,13 @@ const list = document.querySelector('#list');
 
 button.addEventListener('click', () => { button} );
 
-if (input.value !='') {button} 
+  if (input.value !='') {button} 
 
 const li = document.createElement('li');   
 const deleteButton = document.createElement('button');
 
-li.textContent = input.value; 
+li.innerHTML = input.value; 
+
 deleteButton.textContent ='❌';
 
 li.append(deleteButton); 
