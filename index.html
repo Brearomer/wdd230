@@ -13,10 +13,13 @@
  
     <link href="styles/base.css" rel="stylesheet">
     <link href="styles/larger.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+      
 </head>
 <body>
    <header>
@@ -25,12 +28,21 @@
        <span></span>
    </header>   
    <nav>
+      <ul class="sidebar">
+         <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+         <li><a href="#" class="active">Home</a></li>
+         <li><a href="#">Chamber</a></li>
+         <li><a href="#" class="activte">Site Plan</a></li>
+         <li><a href="#">Form</a></li>
+         <li><a href="#">Contact Us</a></li>
+    </ul>
       <ul>
-           <li><a href="#" class="active">Home</a></li>
-           <li><a href="#">Chamber</a></li>
-           <li><a href="#" class="activte">Site Plan</a></li>
-           <li><a href="#">Form</a></li>
-           <li><a href="#" title="About Us " class="active">About Us</a></li>
+           <li class="hideOnMobile"><a href="#" class="active">Home</a></li>
+           <li class="hideOnMobile"><a href="#">Chamber</a></li>
+           <li class="hideOnMobile"><a href="#" class="activte">Site Plan</a></li>
+           <li class="hideOnMobile"><a href="#">Form</a></li>
+           <li class="hideOnMobile"><a href="#">Contact Us</a></li>
+           <li class="menu-button"onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
       </ul>
    </nav>
    <main>
@@ -41,14 +53,13 @@
      
      <ul>
        
-           <li><a href="week01/chamber-site-plan.html" >Week 1</a></li>
-           <li><span>Week 2</span><a href="week02/design.html">Design</a> 
-            <a href="week02/bom.html">Book of Mormon - Top 10</a>
-           <li><a href="#">Week 3</a></li>
-            <li><a href="#">Week 4</a></li>
-           <li><a href="#"> Week 5</a></li>
-           <li><a href="#"> Week 6</a></li>
-           <li><a href="#"> Week 7</a></li>
+           <li>Week 1<a href="week01/chamber-site-plan.html" ></a></li>
+           <li>Week 2<a href="week02/design.html">Design</a>|<a href="week02/bom.html">Book of Mormon - Top 10</a></li>  
+           <li>Week 3<a href="#"></a></li>
+            <li>Week 4<a href="#"></a></li>
+           <li>Week 5<a href="#"></a></li>
+           <li>Week 6<a href="#"> </a></li>
+           <li>Week 7<a href="#"> </a></li>
          
         
      </ul> 
@@ -60,15 +71,26 @@
       <p>Page Vists x</p>
    </section>
    </div>
-   </main>
+   </main> 
+
    <div class="footer">
    <footer>
       <p>&copy; | Today's Date: <span id="currentdate"></span> Brea Romer | The Bahamas</p>
       <p>Last Modified: <span id="lastModified"></span></p>
    </footer>
    <script src="scripts/getDate.js"></script> 
-   <script src="week02/scripts/bom.js"></script>
 </div>
+   <script>
+      function showSidebar(){
+         const sidebar = document.querySelector('.sidebar') 
+         sidebar.style.display = 'flex'
+      }
+      function hideSidebar(){
+         const sidebar = document.querySelector('.sidebar') 
+         sidebar.style.display = 'none'
+      }
+   </script>
+
 </body>   
 
 </html>
