@@ -1,7 +1,7 @@
-const hamButton = document.querySelector('#menu');
-const navigation = document.querySelector('.navigation');
+const hamburgerElement = document.querySelector('button');
+const navElement = document.querySelector('.menuLinks');
 
-hamButton.addEventListener('click', () => {
-	navigation.classList.toggle('show');
-	hamButton.classList.toggle('show');
+hambugerElement.addEventListener('click', () => {
+	navElement.classList.toggle('open');
+	hamButton.classList.toggle('open');
 });

@@ -20,19 +20,7 @@
         }
     }
 
-   /*--------------- Hambuger menu*/
-   /* large view navigation ************************************/
-@media (min-width: 37.5em) {
-	h1 {
-		font-size: 2.5rem;
-		margin-left: 0;
-		text-align: center;
-	}
-	
-	h2 {
-		font-size: 2rem;
-		text-align: center;
-	}
+   
 
 	#menu {
 		display: none; /* hide hamburger button */
@@ -49,8 +37,21 @@
 	
 	.stuff {
 		margin: 1rem auto;
-	}
-}
-
+	} 
+   /* Hamburger Navigation*/
+   #Button{
+        display: none;
+   }
+   
+   ul.menuLinks, ul.menuLinks.open{
+     display: flex;
+     justify-content: flex-end;
+   }
+    
+   ul.menuLinks a:hover{
+     color:aqua;
+   }
+ 
+   /* -- DARK MODE*/
 
 }
