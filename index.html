@@ -15,17 +15,18 @@
     <link href="styles/larger.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
       
-</head>
+     
 <body>
+      
+
    <header>
        <img src="images/ProfilePicture.png" alt="Brea Romer ProfilePicture" width="75" height="100">
        <h1>Brea Romer</h1>
-       <span></span>
    </header>   
    <nav>
       <ul class="sidebar">
@@ -45,6 +46,11 @@
            <li class="menu-button"onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
       </ul>
    </nav>
+ 
+   <div id="toggle">
+      <i class="indicator"></i>
+   </div>
+      
    <main>
     <h1>WDD 230: Web Frontend Development</h1> 
     <div class="parent">
@@ -61,8 +67,8 @@
            <li>Week 6<a href="#"> </a></li>
            <li>Week 7<a href="#"> </a></li>
          
+        </ul> 
         
-     </ul> 
    </section>
    <section>
       <span>Information</span>
@@ -89,8 +95,18 @@
          const sidebar = document.querySelector('.sidebar') 
          sidebar.style.display = 'none'
       }
-   </script>
+   </script> 
 
+  <script>
+   const body = document.querySelector('body');
+   const toggle = document.getElementById('toggle');
+   toggle.onclick = function(){
+      toggle.classList.toggle('active');
+      body.classList.toggle('active');
+   }
+
+  </script>
+   
 </body>   
 
 </html>
