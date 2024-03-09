@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+} 
+
+.header{
+    text-align: center;
+    padding: 20px;
+}
+
+h1{
+    color:#007bff;
+}
+
+.nav{
+    float: right;
+    display: block;
+    color: lightgray;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+} 
+
+.grid-container{
+    display: grid;
+    grid-template-rows: 80px 200px;
+}
+
+
+
+body{
+    background-image: linear-gradient(lightpink,lightblue);
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    color: black;
+    display: block;
+} 
+
+.hero-image {
+    background-image: url('/chamber/images/Bahamas.jpg'); 
+    height:500px;
+    max-width:500px;
+    margin: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: center; 
+    justify-content: center;
+    align-items: center; 
+    border-style:solid ;
+    
+     
+    
+
+}  
+
+.join-button{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: lightpink; 
+    color: #fff; 
+    border: none;
+    border-radius: 5px; 
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase; 
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+} 
+
+.join-button:hover{
+    background-color: aqua;
+} 
+
+/* WEATHER CARD SECTION*/
+.weather-card {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    display:block;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    position: left; 
+    left: 30px;
+    border:3px solid black;
+}
+
+.weather-icon {
+    margin-right: 20px; 
+}
+
+.weather-icon img {
+    width: 80px;
+    height: 80px;
+} 
+
+.weather-info {
+    text-align: center;
+}
+
+.city-name {
+    margin: 0;
+    font-size: 24px;
+}
+
+.temperature {
+    margin: 5px 0;
+}
+
+.description, .date {
+    margin: 0;
+}  
+
+
+/*--- Spot Light Section----*/
+.spotlight-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; 
+    position: right;
+    right: 30px;
+    border: 3px solid black;
+}
+
+.spotlight {
+    max-width: 300px; 
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+    position: right;
+    left:30px;
+    border: 3px solid black;
+}
+
+.spotlight img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px; 
+}
+
+.spotlight h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.spotlight p {
+    margin-bottom: 10px;
+}
+
+.spotlight a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.spotlight a:hover {
+    background-color: #0056b3;
+}
