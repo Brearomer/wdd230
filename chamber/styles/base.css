@@ -1,103 +1,95 @@
-*{
+
+* {
     margin: 0;
     padding: 0;
-} 
+    
+}
 
-.header{
+
+.header {
     text-align: center;
     padding: 20px;
+    position: fixed;
 }
 
-h1{
-    color:#007bff;
+nav li{
+    float: left;
 }
 
-.nav{
-    float: right;
+nav a{
     display: block;
-    color: lightgray;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-} 
-
-.grid-container{
-    display: grid;
-    grid-template-rows: 80px 200px;
+    padding: 20px;
+    background-color:rgb(238, 130, 238);
 }
 
 
-
-body{
-    background-image: linear-gradient(lightpink,lightblue);
+body {
+    background-image: linear-gradient(lightpink, lightblue);
     font-family: 'Roboto', sans-serif;
+    border-style: solid;
+    border-width: medium;
     font-size: 17px;
     line-height: 1.6;
     color: black;
-    display: block;
+    
 } 
 
-.hero-image {
-    background-image: url('/chamber/images/Bahamas.jpg'); 
-    height:500px;
-    max-width:500px;
-    margin: auto;
-    background-position: center;
-    background-repeat: no-repeat;
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+.image-container{
+    background-image: url('/chamber/images/Bahamas.jpg');
+    width: 900px;
+    height: 900px;
     background-size: cover;
-    position: center; 
-    justify-content: center;
-    align-items: center; 
-    border-style:solid ;
-    
-     
-    
+    background-position: center;
+}
 
-}  
 
-.join-button{
+.join-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: lightpink; 
-    color: #fff; 
+    background-color: lightpink;
+    color: #fff;
     border: none;
-    border-radius: 5px; 
+    box-sizing: border-box;
+    border-radius: 5px;
     font-size: 16px;
     font-weight: bold;
-    text-transform: uppercase; 
+    text-transform: uppercase;
     cursor: pointer;
-    transition: background-color 0.3s ease; 
-} 
+    transition: background-color 0.3s ease;
+}
 
-.join-button:hover{
+.join-button:hover {
     background-color: aqua;
-} 
+}
 
-/* WEATHER CARD SECTION*/
+/* Weather Card Section */
 .weather-card {
     display: flex;
     justify-content: center;
-    align-items: center; 
-    display:block;
+    align-items: center;
     width: 300px;
-    height: 200px;
-    border: 1px solid #ccc;
+    height: 100px;
+    border: 1px solid black;
+    box-sizing: border-box;
     border-radius: 10px;
     padding: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-    position: left; 
-    left: 30px;
-    border:3px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .weather-icon {
-    margin-right: 20px; 
+    margin-right: 20px;
 }
 
 .weather-icon img {
     width: 80px;
     height: 80px;
-} 
+}
 
 .weather-info {
     text-align: center;
@@ -112,38 +104,32 @@ body{
     margin: 5px 0;
 }
 
-.description, .date {
+.description,
+.date {
     margin: 0;
-}  
+}
 
-
-/*--- Spot Light Section----*/
+/* Spotlight Section */
 .spotlight-section {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px; 
-    position: right;
-    right: 30px;
-    border: 3px solid black;
+    gap: 30px;
 }
 
 .spotlight {
-    max-width: 300px; 
+    max-width: 300px;
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    position: right;
-    left:30px;
-    border: 3px solid black;
 }
 
 .spotlight img {
     max-width: 100%;
     border-radius: 5px;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
 }
 
 .spotlight h2 {

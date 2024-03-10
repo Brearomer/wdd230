@@ -1,88 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chamber Home Page</title>
 
+    <link rel="stylesheet" href="/chamber/styles/normalize.css">
     <link href="/chamber/styles/base.css" rel="stylesheet">
     <link href="/chamber/styles/larger.css" rel="stylesheet">
 
     <link rel="icon" href="/chamber/images/favicon.ico"> 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
    
-       
-       <meta property="og:Commonwealth Chamber of Commerce" content="Chamber Home Page">
-       <meta property="og:CCOC" content="website">
-       <meta property="og:image" content="https:///github.com/brearomer/wdd230/blob/main/chamber/images/titleimage.jpg">
-       <meta property="og:url" content="https://github.com/Brearomer/wdd230">
-       
+    <meta property="og:title" content="Commonwealth Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://github.com/brearomer/wdd230/blob/main/chamber/images/titleimage.jpg">
+    <meta property="og:url" content="https://github.com/Brearomer/wdd230">
 </head>
 <body>
     <header>
         <h1>Commonwealth Chamber of Commerce</h1>
     
-     <nav>
-        <ul>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-        </ul>
-     </nav>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
     </header> 
 
     <div class="hero-image">
-        
-        <img src="/chamber/images/Bahamas.jpg">
+        <img src="/chamber/images/Bahamas.jpg" alt="Hero Image"> 
     </div>
-    
 
-   <button class="join-button">Join Now</button>
+    <button class="join-button">Join Now</button>
  
-   <section class="current-events">
-    <h2>Current Event</h2>
-    <div class="event">
-        <h3>Golf Tournament </h3>
-        <p>Date: July 2 2024</p>
-        <p>What a better way to promote your business than by sponsoring our Golf Tournament? </p>
-    </div>
-    <div class="event">
-        <h3>Events Calender</h3>
-        <p>A way to keep with the upcoming events.</p>
-    </div>
-   </section> 
-   <section class="weather-card">
-    <div class="weather-icon">
-        <img src="weather-icon.png" alt="Weather Icon">
-    </div>
-    <div class="weather-info">
-        <h2 class="city-name">City Name</h2>
-        <p class="temperature">Temperature: 20°C</p>
-        <p class="description">Partly Cloudy</p>
-        <p class="date">Date: March 8, 2024</p>
-    </div>
+    <section class="current-events">
+        <h2>Current Events</h2>
+        <div class="event">
+            <h3>Golf Tournament</h3>
+            <p>Date: July 2, 2024</p>
+            <p>What better way to promote your business than by sponsoring our Golf Tournament?</p>
+        </div>
+        <div class="event">
+            <h3>Events Calendar</h3>
+            <p>Stay updated with our upcoming events.</p>
+        </div>
+    </section> 
 
+    <section class="weather-card">
+        <div class="weather-icon">
+            <img src="weather-icon.png" alt="Weather Icon">
+        </div>
+        <div class="weather-info">
+            <h2 class="city-name">City Name</h2>
+            <p class="temperature">Temperature: 20°C</p>
+            <p class="description">Partly Cloudy</p>
+            <p class="date">Date: March 8, 2024</p>
+        </div>
+    </section>
 
     <section class="spotlight-section">
         <div class="spotlight">
             <img src="spotlight-image1.jpg" alt="Spotlight Image 1">
             <h2>Spotlight Title 1</h2>
-            
             <a href="#">Read More</a>
         </div>
         <div class="spotlight">
             <img src="spotlight-image2.jpg" alt="Spotlight Image 2">
             <h2>Spotlight Title 2</h2>
-        
             <a href="#">Read More</a>
         </div>
+    </section>
 
     <footer>
-        <p>&copy; | Today's Date: <span id="currentdate"></span> Brea Romer | The Bahamas</p>
-        <span id="last-modified"></span>
+        <p>&copy; <span id="currentdate"></span> Brea Romer | The Bahamas</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
     </footer>
 </body>
 </html>
