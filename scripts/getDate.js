@@ -32,11 +32,8 @@ const currentdate = dayName + ", " + todaysdate.getDate() + " " + monthName + ",
 
 document.getElementById('currentdate').textContent = currentdate;
 
-document.addEventListener("DOMContentLoade", function(){
-    var lastModified = document.lastModified;
 
-   varlastModifiedElement = document.getElementById("lastModified");
-   if(lastModifiedElement){
-      lastModifiedElement.textContent = lastModified;
-   } 
-});
+
+
+const date = new Date(document.lastModified);
+document.getElementById('lastModified').innerHTML = date;
