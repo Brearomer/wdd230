@@ -230,7 +230,7 @@ ul.open.menuLinks{
 
 /* -- DARK MODE*/ 
 
-header{
+body{
     padding: 25px;
     background-color: white;
     color: black;
