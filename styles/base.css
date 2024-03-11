@@ -96,7 +96,7 @@ nav .active{
 } 
 
 .parent span{
-    background-color: #bed;
+    background-color: lightgray;
     color:lightgray;
     display: block;
     text-align: center;
