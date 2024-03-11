@@ -1,5 +1,4 @@
-const button = document.querySelector('#darkBtn');
-
-myBtn.addEventListener('click', () =>){
-	
-};
+function modeButton(){
+    var element = document.header;
+    element.classList.toggle("dark-mode");
+}
