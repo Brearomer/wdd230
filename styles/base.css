@@ -230,16 +230,16 @@ ul.open.menuLinks{
 
 /* -- DARK MODE*/ 
 
-body{
-    padding: 25px;
-    background-color: white;
-    color: black;
-    font-size: 25px;
-} 
-
-.dark-mode{
-    background-color: black;
-    color: white;
+#darkmode{
+    position: absolute;
+    top: 1rem, right, 1rem;
+    width: 24px;
+    background-color: #fff;
+    color:black;
+    cursor: pointer;
 }
 
+header{
+    position: relative;
+}
 /*------------------------------------------------------*/
