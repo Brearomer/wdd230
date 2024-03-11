@@ -35,5 +35,5 @@ document.getElementById('currentdate').textContent = currentdate;
 
 
 
-const date = new Date(document.lastModified);
-document.getElementById('lastModified').innerHTML = date;
+let text = document.lastModified;
+document.getElementById('lastModified').innerHTML = text;

@@ -12,7 +12,8 @@
 
     @media (min-width: 640px) {
         nav ul {
-            display: flex;    
+            display: flex;   
+            
         } 
 
         nav ul li{

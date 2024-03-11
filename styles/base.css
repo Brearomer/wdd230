@@ -37,7 +37,7 @@ h1{
 
 h2 {
     font-size: 1.2rem;
-    color: navy;
+    color: purple;
     text-align: left;
     margin: 1rem;
 }
@@ -51,7 +51,7 @@ nav{
 
 
 nav{
-    background-color: rgb(245, 85, 245);
+    background-color: deeppink;
     margin: auto;
     max-width: 800px;
 } 
@@ -62,30 +62,56 @@ nav ul {
 
 nav a {
     display: block;
-    color:rgb(78, 164, 222);
+    color:#fff;
     text-align: center;
     padding: .5rem;
     text-decoration: none;
 }  
 
-.active {
-    color:dimgray;
-}
+
 
 nav a:hover{
-    background-color: aquamarine;
+    background-color: rgba(255,255,255,0.2);
+    border: 1px solid black;
 }
 
 
 
 nav .active{
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0,0,0,03);
 }  
 
 
 .parent{
     margin: 1rem 2vw;
 } 
+
+.parent section{
+    border:1px solid black;
+    background-color: darkturquoise;
+    border-radius: 10px;
+    overflow: hidden;
+    margin:1rem 0;
+} 
+
+.parent span{
+    background-color: #bed;
+    color:black;
+    display: block;
+    text-align: center;
+    padding: 0.75em 0;
+} 
+
+.parent p{
+    padding: 10px;
+} 
+
+footer{
+    background-color: deeppink;
+    color:black;
+    text-align: center;
+
+}
 
 /*--------- HAMBURGER MENU---------*/
 
