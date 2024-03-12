@@ -180,3 +180,8 @@ main{
 .spotlight a:hover {
     background-color: #0056b3;
 }
+ 
+.footer{
+    color: lightblue;
+    font-family: monospace;
+}
