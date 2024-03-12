@@ -33,24 +33,27 @@ body {
     color: black;
     
 } 
+/* -----------------------Hero Image--------------*/
 
-img{
-    max-width: 100%;
-    height: auto;
-}
-
-
-.image-container{
-    background-image: url('/chamber/images/Bahamas.jpg');
-    width: 900px;
-    height: 900px;
-    background-size: cover;
+.hero-image{
+    height: 50%; 
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+} 
+.hero{
+    width: 100%;
 }
+
+
 
 
 .join-button {
     display: inline-block;
+    position:absolute;  
+    top: 20px;
+    left:20px;
     padding: 10px 20px;
     background-color: lightpink;
     color: #fff;
@@ -68,46 +71,70 @@ img{
     background-color: aqua;
 }
 
-/* Weather Card Section */
-.weather-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    height: 100px;
-    border: 1px solid black;
-    box-sizing: border-box;
-    border-radius: 10px;
-    padding: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/*------------------ Hamburger Button-----------*/
+nav{
+    background-color: lightgrey;
+} 
+
+#Button::before{
+    content:"\2630";
 }
 
-.weather-icon {
-    margin-right: 20px;
+#Button{
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+    width: 44px;
+    text-align: right;
+    padding: .25rem .2vw;
+    position: absolute; 
+    top: 0;
+    right: 2vw;
+} 
+
+ul.menuLinks li a{
+    font-family: sans-serif;
+    display: block;
+    padding: .75rem 2vw;
+    color: white;
+    text-decoration: none;
+} 
+
+li.current-menu-items{
+    color:lightpink;
 }
 
-.weather-icon img {
-    width: 80px;
-    height: 80px;
+li.current-menu-items a{
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
-.weather-info {
-    text-align: center;
+ul.menuLinks{
+    display: none;
+    list-style-type: none;
 }
 
-.city-name {
-    margin: 0;
-    font-size: 24px;
+
+/* CSS for the open class*/
+#Button.open::before{
+    content: "X";
+} 
+
+ul.open.menuLinks{
+    display: block;
+} 
+
+/* -------- Event section--------*/
+
+main{
+    margin: 0 auto;
 }
 
-.temperature {
-    margin: 5px 0;
-}
 
-.description,
-.date {
-    margin: 0;
-}
+
+
+
 
 /* Spotlight Section */
 .spotlight-section {
@@ -142,7 +169,7 @@ img{
 }
 
 .spotlight a {
-    display: inline-block;
+    display: grid;
     padding: 8px 16px;
     background-color: #007bff;
     color: #fff;
