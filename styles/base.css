@@ -7,6 +7,13 @@
 body{
     font-family: "Roboto", sans-serif;
     font-weight: 300;    
+    height: 100vh;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    font-family:'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 /* mobile */
@@ -17,13 +24,42 @@ header {
 	align-items: center;
 	justify-content: center;
 	padding: 20px;
-	border: 1px solid rgba(0, 0, 0, 0.1);
+	border: 1px solid rgba(0, 0, 0, 0.1); 
+    position: absolute;
 }
+
 
 header
 main {
 	margin: 0 auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width: 760px;
+    background-color: rgba(255,255,255,0.2);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
 }
+
+picture:nth-child(2) img{
+    width: 300px;
+    height: 300px;
+} 
+
+p{
+    grid-column: 1/3;
+    word-break: keep-all;
+    margin: 1rem;
+} 
+
+picture:nth-child(5) img{
+    width: auto;
+    height: 300px;
+    object-fit: cover;
+}
+
 
 
 
@@ -40,6 +76,17 @@ h2 {
     color: purple;
     text-align: left;
     margin: 1rem;
+}
+ 
+.label{
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+} 
+
+#visits{
+    color: aqua;
+    font-weight: bolder;
+    font-size: larger;
 }
 
 nav{
@@ -97,7 +144,7 @@ nav .active{
 
 .parent span{
     background-color: lightgray;
-    color:lightgray;
+    color:black;
     display: block;
     text-align: center;
     padding: 0.75em 0;
@@ -243,3 +290,50 @@ header{
     position: relative;
 }
 /*------------------------------------------------------*/
+
+/* Hero image*/
+.hero picture{
+    width: 100%;
+} 
+.hero img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+} 
+
+.hero{
+    margin: 10px auto;
+    position: relative; 
+    border: 1px solid rgba(0,0,0,.1);
+    height: 300px;
+} 
+
+.herolabel{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background: radial-gradient(#fff, pink);
+    border: 1px solid rgba(0,0,0,.75);
+    padding: 1.5rem;
+    box-shadow: 0 0 3rem #fff;
+    opacity: 0.75;
+} 
+
+.herolabel p{
+    margin: 0;
+    padding: .25rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family:"Roboto", seif ;
+} 
+
+.hero span{
+    position: center;
+    bottom: 40;
+    left: 20;
+   width: 30%;
+    background-color: rgba(225,225,225, 0.5);
+    padding: 1rem; 
+    text-align: center;
+}
