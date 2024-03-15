@@ -8,7 +8,7 @@ body{
     font-family: "Roboto", sans-serif;
     font-weight: 300;    
     height: 100vh;
-    display: flex;
+    display: block;
     place-items: center;
     justify-content: center;
     font-family:'Roboto', sans-serif;
@@ -52,6 +52,7 @@ p{
     grid-column: 1/3;
     word-break: keep-all;
     margin: 1rem;
+    
 } 
 
 picture:nth-child(5) img{
@@ -72,6 +73,7 @@ h1{
 } 
 
 h2 {
+    font-family: sans-serif;
     font-size: 1.2rem;
     color: purple;
     text-align: left;
@@ -81,6 +83,16 @@ h2 {
 .label{
     font-family: Arial, sans-serif;
     font-weight: 700;
+    margin:0;
+    position: absolute;
+    top: 90%;
+    left: 10px;
+    margin-left: 40px;
+    background: radial-gradient(#e6f5e4, pink);
+    border: 1px solid rgba(6,76,60,0.991);
+    padding: 1.5rem;
+    box-shadow: 0 0 3rem lightgray;
+    opacity: 0.85;
 } 
 
 #visits{
@@ -110,7 +122,7 @@ nav ul {
 
 nav a {
     display: block;
-    color:black;
+    color:aqua;
     text-align: center;
     padding: .5rem;
     text-decoration: none;
@@ -120,7 +132,7 @@ nav a {
 
 nav a:hover{
     background-color: rgba(255,255,255,0.2);
-    border: 1px solid lightblue;
+    border: 1px solid pink;
 }
 
 
@@ -136,7 +148,7 @@ nav .active{
 
 .parent section{
     border:1px solid pink;
-    background-color: darkturquoise;
+    background-color: deeppink;
     border-radius: 10px;
     overflow: hidden;
     margin:1rem 0;
@@ -153,6 +165,55 @@ nav .active{
 .parent p{
     padding: 10px;
 } 
+
+
+.hero{
+    position: relative; 
+    
+} 
+
+.hero img{
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 2rem;
+} 
+
+.hero picture{
+    width: 100%;
+} 
+
+.herolabel{
+    position: absolute;
+    top: 90%;
+    left: 10px;
+    margin-left:40PX;
+    background: radial-gradient(#fff, pink);
+    border: 1px solid rgba(0,0,0,.75);
+    padding: 1.5rem;
+    box-shadow: 0 0 3rem #fff;
+    opacity: 0.85;
+} 
+
+.herolabel p{
+    margin: 0;
+    padding: .25rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family:"Great Vibes", seif ;
+    color: #042545;
+} 
+
+.hero span{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+   width: 30%;
+    background-color: rgba(225,225,225, 0.5);
+    padding: 1rem; 
+    text-align: center;
+}
+
 
 footer{
     background-color: deeppink;
@@ -201,8 +262,8 @@ nav{
     font-size: clamp(1rem, 2vmin, 1.5rem);
 }  
 
-.nav a:hover, navigation a:active{
-    color: white;
+.nav a:hover, .navigation a:active{
+    color: pink;
     background-color: lightgray;
 }
 
@@ -211,25 +272,6 @@ nav{
 }
  
 
-
-@media(min-width: 40em){
-    .nav{
-        display: flex;
-    }
-    .nav li{
-        display: block;
-    } 
-   .nav a{
-    text-align: center;
-   } 
-   #menu{
-    display: none;
-   }
-
-} 
-nav{
-    background-color: deeppink;
-}
 
 #button{
     font-size: 2rem;
@@ -246,7 +288,7 @@ nav{
 }
 
 ul.menuLinks li a{
-    border: lightcoral;
+    border: none;
     display: block;
     padding: .75rem 2vw;
     color:aqua;
@@ -291,49 +333,5 @@ header{
 }
 /*------------------------------------------------------*/
 
-/* Hero image*/
-.hero picture{
-    width: 100%;
-} 
-.hero img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-} 
 
-.hero{
-    margin: 10px auto;
-    position: relative; 
-    border: 1px solid rgba(0,0,0,.1);
-    height: 300px;
-} 
 
-.herolabel{
-    position: absolute;
-    top: 30px;
-    left: 30px;
-    background: radial-gradient(#fff, pink);
-    border: 1px solid rgba(0,0,0,.75);
-    padding: 1.5rem;
-    box-shadow: 0 0 3rem #fff;
-    opacity: 0.75;
-} 
-
-.herolabel p{
-    margin: 0;
-    padding: .25rem;
-    font-weight: 700;
-    font-size: 1.5rem;
-    font-family:"Roboto", seif ;
-} 
-
-.hero span{
-    position: center;
-    bottom: 40;
-    left: 20;
-   width: 30%;
-    background-color: rgba(225,225,225, 0.5);
-    padding: 1rem; 
-    text-align: center;
-}

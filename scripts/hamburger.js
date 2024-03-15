@@ -1,4 +1,4 @@
-const hamburgerElement = document.querySelector('button')
+const hamburgerElement = document.querySelector('#ibutton')
 const navElement = document.querySelector('.menuLinks'); 
 
 hamburgerElement.addEventListener('click', () =>{
