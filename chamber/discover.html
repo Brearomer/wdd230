@@ -1,64 +1,129 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[Brea Romer]-WDD 230- Web Frontend Development</title> 
-    
-    <meta property="og:title" content="WDD230 Web Frontend Development"/>
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://mangotreetravel.com/path-to-your-image.jpg">
-    <meta property="og:url" content="https://brearomer.github.io/wdd230"> 
-    
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link href="styles/base.css" rel="stylesheet">
-    <link href="styles/larger.css" rel="stylesheet">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-</head>
-<body>    
-   <header>
-       <img src="/images/ProfilePicture.webp" alt="Brea Romer Profile Picture" width="75" height="100">
-       <h1>Brea Romer</h1> 
-       <img src="images/dark-theme-svgrepo-com (1).svg" alt="Dark Mode" id="darkBtn" width="20" height="20">
-       <button id="darkmode"></button>
-   </header>   
-   <nav> 
-       <button id="button"></button>
-       <ul class="menuLinks">
-           <li><a class="current-menu-item active">Home</a></li>
-           <li><a href="chamber/index.html">Chamber</a></li>
-           <li><a href="#">Site Plan</a></li>
-           <li><a href="#">Form</a></li>
-           <li><a href="#">About Us</a></li>
-      </ul>
-   </nav>
-   <div class="hero">
-       <picture>
-           <source srcset="/images/hero-small.webp" media="(max-width:500px )">
-           <source srcset="/images/hero-medium.webp" media="(max-width:1000px )">
-           <img src="/images/hero-large.webp" alt="hero photo" width="500" height="250">
-           <span>Cedar City Utah Temple</span>
-       </picture>
-   </div>
-   <main>
-       <header>
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>[Brea Romer]-WDD 230- Web Frontend Development</title> 
+            
+            <meta property="og:title" content="WDD230 Web Frontend Development"/>
+            <meta property="og:type" content="website">
+            <meta property="og:image" content="https://mangotreetravel.com/path-to-your-image.jpg">
+            <meta property="og:url" content="https://brearomer.github.io/wdd230"> 
+            
+            <link rel="stylesheet" href="styles/normalize.css">
+            <link href="/chamber/styles/small.css" rel="stylesheet">
+            <link href="/chamber/styles/larger.css" rel="stylesheet">
+            
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        </head>
+        <body>    
+        <header>
+            <img src="/images/ProfilePicture.webp" alt="Brea Romer Profile Picture" width="75" height="100">
+            <h1>Brea Romer</h1> 
+            <img src="images/dark-theme-svgrepo-com (1).svg" alt="Dark Mode" id="darkBtn" width="20" height="20">
+            <button id="darkmode"></button>
+        </header>   
+        <nav> 
+            <button id="button"></button>
+            <ul class="menuLinks">
+                <li><a class="current-menu-item active">Home</a></li>
+                <li><a href="chamber/index.html">Chamber</a></li>
+                <li><a href="#">Site Plan</a></li>
+                <li><a href="#">Form</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </nav>
+        <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width:500px )">
+                <source srcset="images/hero-medium.webp" media="(max-width:1000px )">
+                <img src="images/hero-large.webp" alt="hero photo" width="500" height="250">
+                <span>Cedar City Utah Temple</span>
+            </picture>
+        </div>
         
-       </header>
-       
-           
-       
-   </main> 
-   <figure>
-       <img src="fallback-map-image.jpg" loading="lazy" width="600" height="400" alt="map">
-       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.0329970187563!2d-77.33119332516786!3d25.032954238334554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x892f7c7cc3477ce1%3A0x1055cccfd98de504!2sNassau!5e0!3m2!1sen!2sbs!4v1710521456510!5m2!1sen!2sbs" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-   </figure>
-   <footer>
-       <p>&copy; Today's Date: <span id="currentdate"></span> Brea Romer | The Bahamas</p>
-       <p>Last Modified: <span id="lastModified"></span></p>
-   </footer>
-   <script src="scripts/getDate.js"></script>
-   <script src="scripts/hamburger.js"></script>
-   <script src="scripts/visit.js"></script>
+        <section class="event">
+            <div class="event">
+                <h3>Swimming With Dolphin</h3>
+                <p>Will be Anounce soon</p>
+            </div>
+
+        </section>
+        <section class="event">
+            <h2>Current Events</h2>
+            <div class="event">
+                <h3>Golf Tournament</h3>
+                <p>Date: July 2, 2024</p>
+                <p>What better way to promote your business than by sponsoring our Golf Tournament?</p>
+            </div>
+
+        </section>
+        <section class="event">
+            <img src="/chamber/images/spotlight3.jpeg" alt="Spot Light Image 3">
+            <p>Adventures Business</p>
+          </div>
+        </section>
+        
+
+
+
+        
+        <section class="calendar">
+            <h2>calendar</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                    </tr>
+                </thead>
+                <tbody id="calender-body">
+
+                </tbody>
+            </table>
+        </section>
+
+
+
+        <section class="weather-class">
+            <div class="weather-container">
+                <h2>Current Weather</h2>
+                <div>
+                    <img class="weather-icon" src="images/sun.png" alt="Weather Icon">
+                </div>
+            </div>
+        </section>
+        
+
+            
+            
+
+
+        
+
+        <figure>
+            <img src="fallback-map-image.jpg" loading="lazy" width="600" height="400" alt="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.0329970187563!2d-77.33119332516786!3d25.032954238334554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x892f7c7cc3477ce1%3A0x1055cccfd98de504!2sNassau!5e0!3m2!1sen!2sbs!4v1710521456510!5m2!1sen!2sbs" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </figure>
+
+
+
+    </main>
+        <footer>
+            <p>&copy; Today's Date: <span id="currentdate"></span> Brea Romer | The Bahamas</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </footer>
+        <script src="scripts/getDate.js"></script>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/visit.js"></script>
+        <script src="scripts/calender.js"></script>
+        </body>
+        </html>
