@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link href="styles/base.css" rel="stylesheet">
     <link href="styles/larger.css" rel="stylesheet">
+    <link href="styles/form.css" rel="stylesheet">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,28 +49,40 @@
 
 
    <main>
-       <h1>WDD 230: Web Frontend Development</h1> 
-       <div class="parent">
-           <section>
-               <span>Learning Activities</span>
-               <ul>
-                   <li>Week 1<a href="week01/chamber-site-plan.html">Chamber Site Plan</a></li>
-                   <li>Week 2<a href="week02/design.html">Design</a> | <a href="week02/bom.html">Book of Mormon - Top 10</a></li>  
-                   <li>Week 3<a href="week03/images/landscape.jpg.webp">landscape</a> | <a href="week03/lazyload.html">lazy load</a> |<a href="/week03/responsive-images.html">Responsive</a> | <a href="/week03/bom.html">BOM Chapter</a></li>
-                   <li>Week 4<li href="https://codepen.io/Brea-Romer/pen/rNbjWox">Pseudo-class | <a href="/week04/images/Screenshot 2024-03-18 170134.png">Combinator exercises</a>|<a href="https://www.w3schools.com/css/exercise.asp?filename=exercise_combinators4">Combinator</a>|<a href="week04/Form-start/index.html">Form</a></li>
-                   <li>Week 5</li>
-                   <li>Week 6</li>
-                   <li>Week 7</li>
-               </ul> 
-           </section>
-           
-           <section>
-               <span>Information</span>
-               <p>Nassau Village, The Bahamas</p>
-               <p>23°C Cloudy</p>
-               <p id="pageVisitCounter" class="counter-value">Visit Count: </p>
-           </section>
-       </div>
+       <form type="get" action="record.html">
+        <fieldset>
+        <label>Full Name: <input type="text" pattern="[a-zA-Z\s.]{2,}" title="Please Enter Your first and last name" id="" name="" required></label>
+        <label for="pwd">Password: <input type="password" id="pwd" name="pwd" pattern=".{8,}" title="Eight or more characters"></label>
+        <label for="confirm_password">Confirm Password:  <input type="confirm_password" name="confirm_password" required></label>
+        <label for="email">Email: <input type="email" id="email" name="email" required oninput="validateEmail()"></label> 
+        <input type="submit" value="Register Completed">
+        <label for="ageRating">Age Rating: <input type="range" id="ageRating" min="1" max="10" step="1" oninput="updateValue()"></label>
+        <span id="displayValue">1</span>
+       </form>
+      </fieldset> 
+
+      <div class="star-rating">
+        <input type="radio" name="stars" id="star-a" value="5"/>
+        <label for="star-a"></label>
+  
+        <input type="radio" name="stars" id="star-b" value="4"/>
+        <label for="star-b"></label>
+    
+        <input type="radio" name="stars" id="star-c" value="3"/>
+        <label for="star-c"></label>
+    
+        <input type="radio" name="stars" id="star-d" value="2"/>
+        <label for="star-d"></label>
+    
+        <input type="radio" name="stars" id="star-e" value="1"/>
+        <label for="star-e"></label>
+  </div>
+  
+
+      
+
+      
+       <div id="feedback"></div>
    </main> 
    <figure>
        <img src="fallback-map-image.jpg" loading="lazy" width="600" height="400" alt="map">
@@ -82,3 +95,4 @@
    <script src="scripts/getDate.js"></script>
    <script src="scripts/hamburger.js"></script>
    <script src="scripts/visit.js"></script>
+   <script src="scripts/formvalidation.js"></script>

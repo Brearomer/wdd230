@@ -1,0 +1,106 @@
+:root{
+    --font-family: Arial, sans-serif;
+    --input-padding: 10px;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(lightpink, lightgrey);
+    margin:0;
+    padding:0;
+} 
+
+h2{
+    color:rgb(79, 214, 214);
+    text-align: center;
+} 
+
+form{
+    max-width: 400px;
+    margin:0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+label{
+    display:block;
+    margin-bottom:5px;
+    color:grey;
+}
+
+input[type="text"], 
+input[type="email"]{
+    width: 100%;
+    padding: var(--input-padding);
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+} 
+
+button[type="submit"]{
+    background-color: aqua;
+    color: black;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+} 
+
+button[type="submit"]:hover{
+    background-color: lightgreyS;
+}
+#feeback{color: pink;}  
+
+
+.star-rating{
+    display: flex;
+    align-items: center;
+    width: 160px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 40px auto;
+    position: relative;
+} 
+
+.star-rating input{
+    display: none;
+} 
+
+.star-rating > label{
+    width: 30px;
+    height: 30px;
+    font-family: Arial;
+    font-size: 30px;
+    transition: 0.2s ease;
+    color: orange;
+} 
+
+.star-rating label:hover{
+    color: #ff69b4;
+    transition: 0.2s ease;
+} 
+
+.star-rating label:active::before{
+    transform: scale(1.1);
+} 
+
+.star-rating label::before{
+    content: '\2606';
+    position: absolute;
+    top: 0px;
+    line-height: 26px;
+} 
+
+.star-rating input:checked ~label:before{
+    font-size: 36px;
+    line-height: 21px;
+} 
+
+#ageRatingContainer{
+    text-align: center;
+    margin-top: 20px;
+}
