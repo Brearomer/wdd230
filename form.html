@@ -51,16 +51,15 @@
    <main>
        <form type="get" action="record.html">
         <fieldset>
-        <label>Full Name: <input type="text" pattern="[a-zA-Z\s.]{2,}" title="Please Enter Your first and last name" id="" name="" required></label>
-        <label for="pwd">Password: <input type="password" id="pwd" name="pwd" pattern=".{8,}" title="Eight or more characters"></label>
-        <label for="confirm_password">Confirm Password:  <input type="confirm_password" name="confirm_password" required></label>
-        <label for="email">Email: <input type="email" id="email" name="email" required oninput="validateEmail()"></label> 
-        <input type="submit" value="Register Completed">
-        <label for="ageRating">Age Rating: <input type="range" id="ageRating" min="1" max="10" step="1" oninput="updateValue()"></label>
-        <span id="displayValue">1</span>
-       </form>
+            <label>Full Name: <input type="text" pattern="[a-zA-Z\s.]{2,}" title="Please Enter Your first and last name" id="" name="" required></label>
+            <label for="pwd">Password: <input type="password" id="pwd" name="pwd" pattern=".{8,}" title="Eight or more characters"></label>
+            <label for="confirm_password">Confirm Password:  <input type="confirm_password" name="confirm_password" required></label>
+            <label for="email">Email: <input type="email" id="email" name="email" required oninput="validateEmail()"></label> 
+            <input type="submit" value="Register Completed">
+            <label for="ageRating">Age Rating: <input type="range" id="ageRating" min="1" max="10" step="1" oninput="updateValue()"></label>
+            <span id="displayValue">1</span>
       </fieldset> 
-
+    </form>
       <div class="star-rating">
         <input type="radio" name="stars" id="star-a" value="5"/>
         <label for="star-a"></label>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber Home Page</title>
+
+
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/small.css" rel="stylesheet">
+    
+
+    <link rel="icon" href="/chamber/images/favicon.ico"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+   
+    <meta property="og:Chamber of  Commerse" content="Commonwealth Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://github.com/brearomer/wdd230/blob/main/chamber/images/titleimage.jpg">
+    <meta property="og:url" content="https://github.com/Brearomer/wdd230">
+</head>
+<body>
+    <header>
+        <h1>Commonwealth Chamber of Commerce</h1>
+    
+        <nav>
+            <button id="Button"></button>
+            <ul class="menuLinks">
+                <li><a class="current-menu-item">Home Page </a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#" title="directory">Directory</a></li>
+                <li><a href="#" title="join">Join</a></li>
+            </ul>
+        </nav>
+    </header> 
+    <main>
+        <h2>Membership Application Form</h2>
+        <form action="thankyou.html" method="get" class="wf2">
+            <fieldset>
+                <legend>Applicants Information</legend>
+                <label for="firstName"> Applicant's First Name: <input type="text" id="firstName" name="firstName" required></label>
+                <label for="lastName"> Applicant's Last Name: <input type="text" id="lastName" name="lastName" required></label>
+                <label for="position">Applicant's Title/Position:<input type="text" id="position" name="position" pattern="[a-zA-Z\s-]{7,}" title="Please enter a valid title or position with at least seven characters (letters, hyphens, or spaces)." required></label>
+                <label for="email">Email Address: <input type="email" id="email" name="email" placeholder="example@example.com" required></label>
+                <label for="phone">Moblie Phone Number: <input type="tel" id="phone" required></label> 
+           </fieldset>
+
+           <fieldset>
+                <legend>Business/Organization</legend>
+                <label for="organization">Business/Organization Name: <input type="text" id="organization" name="organization" required></label>
+                <label for="membershipLevel">Membership Level:</label>
+                <select id="membershipLevel" name="membershipLevel" required>
+                    <option value="">Select Membership Level</option>
+                    <option value="NP Membership">NP Membership (No Fee)</option>
+                    <option value="Bronze Membership">Bronze Membership</option>
+                    <option value="Silver Membership">Silver Membership</option>
+                    <option value="Gold Membership"> Gold Membership</option>
+                </select>
+           </fieldset>
+
+           <fieldset>
+             <legend>Business/Organization Desc</legend>
+              <label for="description"> Business/ Organization Description:</label>
+              <textarea id="description" name="description"></textarea>
+              <input type="hidden" id="timestamp" value="">
+              <button type="submit">Submit Application</button>
+           </fieldset>
+        </form>
+      
+        <div class="benefits-container">
+            <h3>Membership Level Benefits</h3>
+            <ul class="benefits">
+              <li><strong>NP Membership:</strong> No fee. Limited benefits.</li>
+              <li><strong>Bronze Membership:</strong> Increased benefits such as special events and discounts.</li>
+              <li><strong>Silver Membership:</strong> More benefits including advertising opportunities and additional training.</li>
+              <li><strong>Gold Membership:</strong> Premium benefits including featured spots on the home page and exclusive events.</li>
+            </ul>
+        </div>
+         
+
+    </main>  
+    
+    <footer>
+        <p>Chamber of Commerce | Brea Romer | wdd230 </p>
+        <p>&copy; |Last Modified: <span id="lastModified"></span></p>
+    </footer> 
+    <script src="/chamber/scripts/menu.js"></script> 
+    <script src="/chamber/scripts/getDate.js"></script>
+    <script>document.getElementById("timestamp").value = new Date().toISOString();</script>
+</body>
+</html>

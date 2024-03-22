@@ -14,7 +14,7 @@ body{
     font-family:'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-}
+} 
 
 /* mobile */
 
@@ -318,19 +318,11 @@ ul.open.menuLinks{
 
 
 /* -- DARK MODE*/ 
-
-#darkmode{
-    position: absolute;
-    top: 1rem, right, 1rem;
-    width: 24px;
-    background-color: #fff;
-    color:black;
-    cursor: pointer;
+.dark-mode body{
+    background-color: #333;
+    color: #f0f0f0;
 }
 
-header{
-    position: relative;
-}
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 
