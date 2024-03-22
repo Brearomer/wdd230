@@ -23,8 +23,7 @@
    <header>
        <img src="/images/ProfilePicture.webp" alt="Brea Romer Profile Picture" width="75" height="100">
        <h1>Brea Romer</h1> 
-       <img src="images/dark-theme-svgrepo-com (1).svg" alt="Dark Mode" id="darkBtn" width="20" height="20">
-       <button id="darkmode"></button>
+       
    </header>   
    <nav> 
        <button id="ibutton"></button>
@@ -42,23 +41,34 @@
            <source srcset="images/hero-small.webp" media="(max-width:500px )">
            <source srcset="images/hero-medium.webp" media="(max-width:1000px )">
            <img src="images/hero-large.webp" alt="hero photo" width="500" height="250">
-           <span>Cedar City Utah Temple</span>
+           <p>Cedar City Utah Temple</p>
        </picture>
    </div>
 
 
 
    <main>
-       <form type="get" action="record.html">
+       <form action="record.html" type="get">
         <fieldset>
-            <label>Username: <input type="text" pattern="[a-zA-Z\s.]{2,}" title="Please Enter Your first and last name" id="" name="" required></label>
-            <label for="pwd">Password: <input type="password" id="pwd" name="pwd" pattern=".{8,}" title="Eight or more characters"></label>
-            <label for="confirm_password">Confirm Password:  <input type="confirm_password" name="confirm_password" required></label>
-            <label for="email">Email: <input type="email" id="email" name="email" required oninput="validateEmail()"></label> 
-            <input type="submit" value="Register Completed">
-            <label for="ageRating">Age Rating: <input type="range" id="ageRating" min="1" max="10" step="1" oninput="updateValue()"></label>
-            <span id="displayValue">1</span>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" pattern="[a-zA-Z0-9]{8,}" title="Password must be at least 8 characters long and can only contain letters and numbers" required>
+            <label for="confirm_password">Confirm Password:</label>
+            <input type="password" id="confirm_password" name="confirm_password" required oninput="checkPasswordMatch()" placeholder="Confirm Password">
+
+             <div id="passwordMatchMessage"></div>
       </fieldset> 
+
+      <fieldset>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address from the byui.edu domain">
+            <label for="pageRating">Page Rating:</label>
+            <input type="range" id="pageRating" name="pageRating" min="1" max="10" step="1" onchange="updateValue()">
+            <span id="displayValue">1</span>
+            <button type="submit">Submit Form</button>
+
+    </fieldset>
     </form>
       <div class="star-rating">
         <input type="radio" name="stars" id="star-a" value="5"/>

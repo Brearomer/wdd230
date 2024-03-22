@@ -13,3 +13,22 @@ document.getElementById("registrationForm").addEventListener("submit", function(
         document.getElementById("password").focus();
     }
 });
+
+    function checkPasswordMatch() {
+    var password = document.getElementById("password").value;
+    var confirm_password = document.getElementById("confirm_password").value;
+
+    if (password !== confirm_password) {
+        document.getElementById("passwordMatchMessage").innerHTML = "Passwords do not match!";
+        document.getElementById("password").value = "";
+        document.getElementById("confirm_password").value = "";
+        document.getElementById("password").focus();
+    } else {
+        document.getElementById("passwordMatchMessage").innerHTML = "";
+    }
+} 
+
+function updateValue() {
+    var rating = document.getElementById("pageRating").value;
+    document.getElementById("displayValue").innerText = rating;
+}
