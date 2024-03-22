@@ -1,26 +1,15 @@
-const form = document.getElementById("form");
+document.getElementById("registrationForm").addEventListener("submit", function(event) {
+    var password = document.getElementById("password").value;
+    var confirmPassword = document.getElementById("confirmPassword").value;
 
-form.addEventListener("focusin", (event)=>{
-    event.target.style.background = "lightgray";
-}); 
-
-form.addEventListener("focusout", (event)=>{
-    event.target.style.background="";
-}); 
-
-function validateEmail(){
-    var emailInput = document.getElementById("email");
-    var emailPattern = /^[a-zA-ZO-9._%+-]+@byui\.edu$/;
-
-    if(!isValid){
-      emailInput.setCustomValidity("Please enter a vaild email address.")
-
-    } else{
-        emailInput.setCustomValidity("");
+    if (password !== confirmPassword) {
+        
+        event.preventDefault();
+        
+        document.getElementById("passwordMismatchError").style.display = "block";
+        
+        document.getElementById("password").value = "";
+        document.getElementById("confirmPassword").value = "";
+        document.getElementById("password").focus();
     }
-} 
-
-function updateValue(){
-    var rangeValue = document.getElementById("ageRating").value;
-    document.getElementById("displayValue").textContent = rangeValue;
-}
+});
