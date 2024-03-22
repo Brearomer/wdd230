@@ -97,14 +97,14 @@ main{
 }
 
 .gallery-image{
-    width: 200px;
-    height: auto;
+    width: 500%;
+    height: 500%;
     transition: transform 0.3s ease;
 }
 
 @media (max-width: 767px){
     .gallery-image{
-        width: 49.99999%;
+        width: 50%;
         margin: 6px 0;
     }
 }
