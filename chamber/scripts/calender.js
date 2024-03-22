@@ -1,33 +1,32 @@
-const today = new Date();
-const currentYear = today.getFullYear();
-const currentMonth = today.getMonth();
-generateCalendar(currentYear, currentMonth);
+document.addEventListener('DOMContentLoaded', function() {
+    generateCalendar();
+});
 
+function generateCalendar() {
+    var calendarBody = document.getElementById('calendar-body');
+    var currentDate = new Date();
+    var currentMonth = currentDate.getMonth();
+    var currentYear = currentDate.getFullYear();
+    var daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
+    var firstDayOfMonth = new Date(currentYear, currentMonth, 1).getDay(); 
 
-function generateCalendar(year, month){
-    const calenderBody = document.getElementById('calender-body');
-    calendarBody.innerHTML ='';
+    var dateCounter = 1;
+    var calendarHTML = '';
 
-    const daysInMonth = new Date(year, month + 1,0).getDate();
-    const firstDay = new Date(year, month, 1).getDate();
-
-    let date = 1;
-    for (let i = 0;  i < 6; i++){
-        const row = document.createElement('tr');
-        for(let j = 0; j < 7; j++){
-            const cell = document.createElement('td');
-            if(i == 0 && j < firstDay){
-                const emptyCell = document.createTextNode('');
-                cell.appendChild(emptyCell);     
-            } else if(date > daysInMonth){
-                break;
-            } else{
-                const dayCell = document.createTextNode(date);
-                cell.appendChild(dayCell);
-                date++;
+    for (var i = 0; i < 6; i++) { 
+        calendarHTML += '<tr>';
+        for (var j = 0; j < 7; j++) {
+            if (i === 0 && j < firstDayOfMonth) {
+                calendarHTML += '<td></td>'; 
+            } else if (dateCounter > daysInMonth) {
+                calendarHTML += '<td></td>'; 
+            } else {
+                calendarHTML += '<td>' + dateCounter + '</td>';
+                dateCounter++;
             }
         }
-        row.appendChild(cell);
-    } 
-    calenderBody.appendChild(row);
+        calendarHTML += '</tr>';
+    }
+
+    calendarBody.innerHTML = calendarHTML;
 }
