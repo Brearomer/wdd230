@@ -13,12 +13,12 @@ nav ul{
 
 nav ul a{
     text-decoration: none;
-    color: white;
+    color: black;
 
 }
 
 nav li a:hover{
-    color:darkgray;
+    color:gray;
     
 } 
 
@@ -28,7 +28,7 @@ main{
     gap: 20px;
     padding: 1rem;
     width: 760px;
-    background-color: lightgrey;
+    background-color: lightpink;
 }  
 
 .label {
