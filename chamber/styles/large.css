@@ -1,0 +1,5 @@
+@media (min-width: 768px){
+    .gallery-image:hover{
+        transform: scale(1.1);
+    }
+}

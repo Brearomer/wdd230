@@ -1,23 +1,40 @@
-const msToDays = 84600000;
+if(typeof(Storage) !== "undefined"){
+	var lastVisit = localStorage.getItem("lastVisit");
 
-const theDateToday = new Date();
+	if(lastVisit){
+		var currentDate = new Date();
+		var difference = currentDate - new Date(lastVisit);
+		var daysDifference = Math.floor(difference / (1000 * 60 * 60* 24));
 
-const todayElement = document.querySelector("#today");
-const christmasElement = document.querySelector("#christmas");
-const christmasDateElement = document.querySelector("#christmasDate");
-const daysElement = document.querySelector("#daysleft");
+		if (daysDifference == 0){
+			document.getElementById("sidebar").innerText ="Back so soon! Awesome!";
+
+		} else{
+			var message = "You last visited ";
+
+			if(daysDifference === 1){
+				message += "1 day ago.";
+			} else{
+				message += daysDifference + "days agp.";
+			}
+		}   document.getElementById("sidebar").innerText = message;
+	} else{
+		document.getElementById("sidebar").innerText = "Welcome! Let us Know if have any questions.";
+	
+		localStorage.setItem("lastVisit", new Date());
+    
+	} else {
+		
+		document.getElementById("sidebar").innerText = "Sorry, your browser does not support localStorage.";
+	}
+}	
+	
+	
+	 
+   
 
 
-const today = Date.now();
-const christmasDate = new Date(Date.UTC(theDateToday.getFullYear(), 11, 25));
 
-if (theDateToday.getMonth() == 11 && theDateToday.getDate() > 25) {
-	christmasDate.setFullYear(christmasDate.getFullYear() + 1);
-}
 
-let daysleft = (christmasDate.getTime() - Date.now()) / msToDays;
 
-todayElement.textContent = today;
-christmasElement.textContent = christmasDate.getTime();
-christmasDateElement.textContent = christmasDate;
-daysElement.textContent = `${daysleft.toFixed(0)} days`;
+

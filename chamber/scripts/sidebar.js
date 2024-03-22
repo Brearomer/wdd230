@@ -4,20 +4,35 @@ document.addEventListener("DOMContentLoaded", function(){
     const currentDate = new Date();
     const oneDay = 24 * 60 * 60 * 1000;
 
-    if(!lastVisitDate){
-        sideContent.textContent = "Welcome! Let us know if you have any questions.";
-
-    } else{
-        const daysDifference = Math.round(Math.abs((currentDate - new Date (lastVisitDate))))
-    }
-
-    if(daysDifference === 0){
-        sideContent.textContent = "Back so soon! Awesome!";
-
-    } else{
-        const message = daysDifference === 1 ? "day" : "days";
-        sideContent.textContent = `You last visit ${daysDifference} ${message} ago.`;
-    }
-
-    localStorage.setItem('lastVisitDate', currentDate.toISOString());
-});
+    if(typeof(Storage) !== "undefined"){
+        var lastVisit = localStorage.getItem("lastVisit");
+    
+        if(lastVisit){
+            var currentVisitDate = new Date();
+            var difference = currentDate - new Date(lastVisit);
+            var daysDifference = Math.floor(difference / (1000 * 60 * 60* 24));
+    
+            if (daysDifference == 0){
+                document.getElementById("sidebar").innerText ="Back so soon! Awesome!";
+    
+            } else{
+                var message = "You last visited ";
+    
+                if(daysDifference === 1){
+                    message += "1 day ago.";
+                } else{
+                    message += daysDifference + "days agp.";
+                }
+            }   document.getElementById("sidebar").innerText = message;
+        } else{
+            document.getElementById("sidebar").innerText = "Welcome! Let us Know if have any questions.";
+        
+            localStorage.setItem("lastVisit", new Date());
+        
+        } 
+            
+            document.getElementById("sidebar").innerText = "Sorry, your browser does not support localStorage.";
+        
+    }	
+        
+        

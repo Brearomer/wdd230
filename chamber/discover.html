@@ -1,115 +1,118 @@
-        <!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>[Brea Romer]-WDD 230- Web Frontend Development</title> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brea Romer - WDD 230 - Web Frontend Development</title> 
             
-            <meta property="og:title" content="WDD230 Web Frontend Development"/>
-            <meta property="og:type" content="website">
-            <meta property="og:image" content="https://mangotreetravel.com/path-to-your-image.jpg">
-            <meta property="og:url" content="https://brearomer.github.io/wdd230"> 
+    <meta property="og:title" content="WDD230 Web Frontend Development"/>
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://mangotreetravel.com/path-to-your-image.jpg">
+    <meta property="og:url" content="https://brearomer.github.io/wdd230"> 
             
-            <link rel="stylesheet" href="styles/normalize.css">
-            <link href="/chamber/styles/small.css" rel="stylesheet">
-            <link href="/chamber/styles/larger.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link href="/chamber/styles/small.css" rel="stylesheet">
+    <link href="/chamber/styles/large.css" rel="stylesheet">
             
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-        </head>
-        <body>    
-        <header>
-            <h1>Discover Page</h1>
-        </header>   
-        <nav> 
-            <button id="button"></button>
-            <ul class="menuLinks">
-                <li><a class="current-menu-item">Home Page </a></li>
-                <li><a href="#" title="Discover">Discover</a></li>
-                <li><a href="#" title="directory">Directory</a></li>
-                <li><a href="#" title="join">Join</a></li>
-            </ul>
-        </nav>
-        <main> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>    
+    <header>
+        <h1>Discover Page</h1>
+    </header>   
+    <nav> 
+        
+        <ul class="menuLinks">
+            <li><a class="current-menu-item">Home Page </a></li>
+            <li><a href="#" title="Discover">Discover</a></li>
+            <li><a href="#" title="directory">Directory</a></li>
+            <li><a href="#" title="join">Join</a></li>
+        </ul>
+    </nav>
+    <main> 
+        
+        <div class="First-column">
+            <section class="hero">
+                <h2>Welcome To Our Website, Feel Free To Join Us Clicking A Button Below</h2>
+            </section>
             
-            <div class="First-column">
-                <section class="hero">
-                    <h2>Welcome To Our Website, Feel Free To Join Us Clicking A Button Below</h2>
-                </section>
-                
-                <section class="event">
-                
-                    <h2>Future Events</h2>
+            
+
+
+            <section class="event">
+                <h2>Future Events</h2>
                 <p>a communication tool that greets consumers when they visit a company's web page. </p>
-                </section>
-                <section class="event">
-                    <h2>Current Events</h2>
-                    <div class="event">
-                        <h3>Golf Tournament</h3>
-                        <p>Date: July 2, 2024</p>
-                        <p>What better way to promote your business than by sponsoring our Golf Tournament?</p>
-                    </div>
-                    <div class="event">
-                        <h3>Swimming With Dolphin</h3>
-                        <p>Will be Anounce soon</p>
-                    </div>
-                </section>
-                <section class="event">
-                    <img src="/chamber/images/spotlight3.jpeg" alt="Spot Light Image 3">
-                    <p>Adventures Business</p>
-                
-                </section>
-                
+            </section>
+            <section class="event">
+                <h2>Current Events</h2>
+                <div class="event">
+                    <h3>Golf Tournament</h3>
+                    <p>Date: July 2, 2024</p>
+                    <p>What better way to promote your business than by sponsoring our Golf Tournament?</p>
+                </div>
+                <div class="event">
+                    <h3>Swimming With Dolphin</h3>
+                    <p>Will be Announced soon</p>
+                </div>
+            </section>
+            <section class="event">
+                <img src="/chamber/images/spotlight3.jpeg" alt="Spot Light Image 3">
+                <p>Adventures Business</p>
+            </section>
 
-                <section class="calendar">
-                    <h2>calendar</h2>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Sun</th>
-                                <th>Mon</th>
-                                <th>Tue</th>
-                                <th>Wed</th>
-                                <th>Thu</th>
-                                <th>Fri</th>
-                                <th>Sat</th>
-                            </tr>
-                        </thead>
-                        <tbody id="calender-body">
+            <section class="calendar">
+                <h2>Calendar</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Sun</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                        </tr>
+                    </thead>
+                    <tbody id="calendar-body">
+                        <!-- Calendar content here -->
+                    </tbody>
+                </table>
+            </section>
 
-                        </tbody>
-                    </table>
-                </section>
-            
-
-                <section class="weather-class">
-                    <div class="weather-container">
-                        <h2>Current Weather</h2>
-                        <div>
-                            <img class="weather-icon" src="images/sun.png" alt="Weather Icon">
-                        </div>
+            <section class="weather-class">
+                <div class="weather-container">
+                    <h2>Current Weather</h2>
+                    <div>
+                        <img class="weather-icon" src="images/sun.png" alt="Weather Icon">
                     </div>
-                </section>
-                </div> 
-                <class class="Second-Column">
-                    <div class="image">
-                    <img src="images/atlantis.jpg" alt="atlantis"  loading="lazy"  width="300" height="500" >
-                    <img src="images/flamingo.jpg" alt="flamingo"  loading="lazy"  width="300" height="500">
-                    <img src="images/sunset.jpg" alt="sunset"      loading="lazy"   width="300" height="500">
-                    <img src="images/oceankey.jpg" alt="oceankey"  loading="lazy"   width="300" height="500">
-                    <img src="images/BahamaParrot.jpg" alt="BahamaParrot"  loading="lazy"  width="300" height="500">
-                    <img src="images/counch.jpg" alt="counch"   loading="lazy"  width="300" height="500">
-                </class>
+                </div>
+            </section>
+        </div> 
+        <div class="Second-Column">
+            <div class="image">
+                <div class="gallery">
+                <img src="images/atlantis.jpg" alt="atlantis"  loading="lazy"  width="300" height="500" >
+                <img src="images/flamingo.jpg" alt="flamingo"  loading="lazy"  width="300" height="500">
+                <img src="images/sunset.jpg" alt="sunset"      loading="lazy"   width="300" height="500">
+                <img src="images/oceankey.jpg" alt="oceankey"  loading="lazy"   width="300" height="500">
+                <img src="images/BahamaParrot.jpg" alt="BahamaParrot"  loading="lazy"  width="300" height="500">
+                <img src="images/counch.jpg" alt="counch"   loading="lazy"  width="300" height="500">
             </div>
+             </div>
+        </div>
     </main>
-        <footer>
-            <p>&copy; Today's Date: <span id="currentdate"></span> Brea Romer | The Bahamas</p>
-            <p>Last Modified: <span id="lastModified"></span></p>
-        </footer>
-        <script src="scripts/getDate.js"></script>
-        <script src="scripts/calender.js"></script>
-        <script src="scripts/lazyload.js"></script> 
-        <script src="scripts/sidebar.js"></script>
-        </body>
-        </html>
+    <aside id="sidebar"></aside>
+    <footer>
+        <p>&copy; Today's Date: <span id="currentdate"></span> Brea Romer | The Bahamas</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/getDate.js"></script>
+    <script src="scripts/calendar.js"></script>
+    <script src="scripts/lazyload.js"></script> 
+    <script src="scripts/sidebar.js"></script>
+    
+</body>
+</html>
