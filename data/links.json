@@ -1,0 +1,88 @@
+{
+    "someKey": "someValue",
+    "otherKey": "otherValue",
+    "weeks": []
+}
+  
+
+{   
+    "weeks":[
+    {
+        "week": "Week 1",
+        "links":[
+            {
+                "url":"week01/holygrail.html",
+                "title":"HG Layout"
+            },
+            {
+                "url": "week01/media-query.html",
+                "title":"mQueries"
+            },
+            {
+                "url":"week01/chamber-site-plan.html",
+                "title":"Site Plan"
+            }
+    ] 
+},  
+
+{
+    "week":"Week 2",
+    "links":[
+        {
+            "url":"week02/bom.html",
+            "title":"Book Of Mormon - Top 10"
+        },
+        {
+            "url":"week02/design.html",
+            "title":"Design"
+        }
+    ]
+},
+
+{
+    "week":"Week 3",
+    "links":[
+        {
+            "url":"week03/bom.html",
+            "title":"Book Of Mormon - Chapter"
+        },
+        {
+            "url":"week03/lazyload.html",
+            "title": "Lazy Load"
+        } 
+        {
+            "url":"week03/responsive-images.html",
+            "title":"Responsive Images"
+        }
+    ]
+}, 
+
+{
+    "week":"Week 4",
+    "links":[
+        {
+            "url":"week05/pseudo.html",
+            "title": "Pseudo"
+        },
+        {
+            "url":"week05/tabelbuild.html",
+            "title":"Table Build"
+        }
+    
+        
+    ]
+}, 
+
+{
+    "week": "Week 5",
+    "links":[
+        {
+            "url":"week05/prophets.html",
+            "title":"Prophets"
+        } 
+        {
+            "url":"week05/weather.html",
+            "title":"Weather"
+        }
+    ]
+},
