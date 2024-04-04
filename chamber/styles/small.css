@@ -18,6 +18,7 @@ main{
     background-color: rgba(200,200,255,0.3);
 }
 
+
 p{
     margin: 1rem;
 }
@@ -28,7 +29,7 @@ p{
 }
 
 #visits{
-    color:#ed6290;
+    color:#ed4983;
     font-weight: bolder;
     font-size: larger;
 } 
@@ -62,11 +63,11 @@ nav li a:hover{
 } 
 
 main{
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     padding: 1rem;
-    width: 760px;
+    width: 770px;
 
 }  
 
@@ -77,27 +78,27 @@ main{
     width:30%;
     height: 30%; 
     
+    
 }
 
 .image{
     max-width: 100%;
     height: auto;
     transition: transform 0.3s ease-in-out;
-
+    
 }
 
-.contrast{filter: contrast(50%);}
+.contrast{filter: contrast(60%);}
     
 .gallery{
-    display: flex;
-    flex-wrap: wrap;
+    display: center;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
 }
 
 .gallery-image{
-    width: 400%;
-    height: 400%;
+    width: 900%;
+    height: 900%;
     transition: transform 0.3s ease;
 }
 
@@ -109,12 +110,14 @@ main{
 }
 .sidebar{
     width: 250px;
-    background-color: #f4f4f4;
+    background-color: #e78888;
     padding: 20px;
 }
 main section{
     border: 3px solid black;
 }
+
+/*----- CALENDER-------*/
 .calender{
     font-family: "Arial", sans-serif;
     max-width: 600px;
@@ -143,8 +146,9 @@ th, td{
 td{
     cursor: pointer;
 } 
+
 td:hover{
-    background-color: darkviolet;
+    background-color: rgb(198, 133, 226);
 }
 
 
