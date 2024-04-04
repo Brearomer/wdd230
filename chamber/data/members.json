@@ -1,0 +1,70 @@
+{
+    "members":
+     [
+            {
+                "businessType":"Dolphin Cay",
+                "address": "Paradise Beach Drive, Suite 39, Paradise Island",
+                "phoneNumber":"(242)363-2000",
+                "websiteUrl":"https://www.atlantisbahamas.com/things-to-do/dolphin-cay",
+                "imageFile":"images/dolphins.jpg",
+                "membershipLevel":"gold"
+                
+                
+             },
+
+            {
+                "businessType":"Ardastra Gardens",
+                "address":"Chippingham Rd, Nassau",
+                "phoneNumber":"(242)323-5806",
+                "websiteUrl":"https://ardastra.com/",
+                "imageFile":"images/Ardastra Gardens.jpg",
+                "membershipLevel":"silver"
+            },
+
+            {
+                "businessType":"Pirates Of Nassau",
+                "address":"3MH4 +23H, King and George St, Nassau",
+                "phoneNumber":"(242)356-3759",
+                "websiteUrl":"http://www.piratesofnassau.com/",
+                "imageFile":"images/pirates_of_nassau.jpg",
+                "membershipLevel":"bronze"
+            },
+    
+            {
+                "businessType":"National Art Gallery Of The Bahamas",
+                "address":"W Hill St,Nassau",
+                "phoneNumber":"(242)328-5800",
+                "websiteUrl":"https://nagb.org.bs/",
+                "imageFile":"images/artgallery.jpg ",
+                "membershipLevel":"non-profit"
+            },
+
+            {
+                "businessType":"Pompey Museum",
+                "address": "2 Bay St,Nassau",
+                "phoneNumber":"(242)326-1007",
+                "websiteUrl":"https://ammcbahamas.org/museums/pompey-museum/",
+                "imageFile":"images/Pompey.jpg",
+                "membershipLevel":"gold"
+            },
+        
+                {
+                    "businessType":"Lucayan National Park",
+                    "address": "High Rock",
+                    "phoneNumber":"(242)393-1317",
+                    "websiteUrl":"https://bnt.bs/explore/grand-bahama/lucayan-national-park/",
+                    "imageFile":"images/lucayanpark.jpg",
+                    "membershipLevel":"silver"
+                },
+    
+            
+                {
+                    "businessType":"Made In Water Excursions- Snorkelling, Underwater",
+                    "address":"Coral Harbour Rd Nassau N.P.Bahamas",
+                    "phoneNumber":"+1(242)4547503",
+                    "websiteUrl":"https://madeinwaterexcursions.com/",
+                    "imageFile":"images/snorkeling.jpg",
+                    "membershipLevel":"gold"
+                }
+    ]     
+}
