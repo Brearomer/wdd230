@@ -91,7 +91,7 @@ main{
 .contrast{filter: contrast(60%);}
     
 .gallery{
-    display: center;
+    display: grid;
     justify-content: center;
     gap: 40px;
 }
