@@ -1,4 +1,4 @@
-const darkmode = document.getElementById('#darkmode'); 
+const darkmode = document.getElementById('#darkButton'); 
 const main = document.querySelector('main');
 
 

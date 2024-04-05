@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber Home Page</title>
+    <title>Chamber of Commerce</title>
 
 
     <link href="styles/normalize.css" rel="stylesheet">
@@ -22,6 +22,8 @@
     <meta property="og:url" content="https://github.com/Brearomer/wdd230">
 </head>
 <body>
+    
+
     <header>
         <h1>Commonwealth Chamber of Commerce</h1>
     
@@ -35,6 +37,11 @@
             </ul>
         </nav>
     </header> 
+     
+    <div id="banner" class="banner">
+        <span>Join us for the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.</span>
+        <span class="close-btn" onclick="closeBanner()">X</span>
+    </div>
 
      <div class="hero-image">
         
@@ -69,7 +76,7 @@
   
       <section class="weather-card">
           <div class="weather-icon">
-              <img src="weather-icon.png" alt="Weather Icon">
+              <img src="" alt="Weather Icon">
           </div>
           <div class="weather-info">
               <h2 class="city-name">City Name</h2>
@@ -103,5 +110,6 @@
     </footer> 
     <script src="/chamber/scripts/menu.js"></script> 
     <script src="/chamber/scripts/getDate.js"></script>
+    <script src="/chamber/scripts/banner.js"></script>
 </body>
 </html>
