@@ -1,5 +1,7 @@
 const baseURL ="https://Brearomer.github.io/wdd230";
 const linksURL = "https://Brearomer.github.io/wdd230/data/links.json"; 
+const weeks = document.querySelector('#weeks');
+const week = document.querySelector("#week");
 
 async function getLinks(){
     const response = await fetch(linksURL);

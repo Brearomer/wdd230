@@ -1,5 +1,20 @@
-const darkModeToggle = document.getElementById('darkModeToggle'); 
+const darkmode = document.getElementById('#darkmode'); 
+const main = document.querySelector('main');
 
-darkModeToggle.addEventListener('click', () =>{
-    document.body.classList.toggle('dark-mode');
+
+darkmode.addEventListener('click',() =>{
+    main.classList.toggle('dark');
+    if (darkmode.textContent.includes("dark")){
+        main.style.background = '#000';
+        main.style.color ='#fff';
+        darkmode.textContent ="light";
+
+    } else{
+        main.style.background ="#eee";
+        main.style.color ="#000";
+        darkmode.textContent ="light";
+    }
+
+    
+    
 });

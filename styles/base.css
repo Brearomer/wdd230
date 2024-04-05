@@ -6,9 +6,10 @@
 
 body{
     font-family: "Roboto", sans-serif;
-    font-weight: 300;    
+    font-weight: 400;    
     height: 100vh;
     display: block;
+    background-color:hotpink;
     place-items: center;
     justify-content: center;
     font-family:'Roboto', sans-serif;
@@ -17,15 +18,13 @@ body{
 } 
 
 /* mobile */
-
 header {
-	background-color:pink;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 20px;
-	border: 1px solid rgba(0, 0, 0, 0.1); 
-    position: absolute;
+    display: flex;
+    background-image: linear-gradient(hotpink,white);
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    
 }
 
 
@@ -57,28 +56,18 @@ p{
 
 picture:nth-child(5) img{
     width: auto;
-    height: 300px;
+    height: 200px;
     object-fit: cover;
 }
 
 
-
-
 h1{
     text-align: left;
-    font-family: times, serif;
+    font-family: times;
     font-size: 1.5rem;
     margin-left: 1rem;
-
 } 
 
-h2 {
-    font-family: sans-serif;
-    font-size: 1.2rem;
-    color: purple;
-    text-align: left;
-    margin: 1rem;
-}
  
 .label{
     font-family: Arial, sans-serif;
@@ -89,28 +78,20 @@ h2 {
     left: 10px;
     margin-left: 40px;
     background: radial-gradient(#e6f5e4, pink);
-    border: 1px solid rgba(6,76,60,0.991);
+    border: 1px solid black;
     padding: 1.5rem;
     box-shadow: 0 0 3rem lightgray;
     opacity: 0.85;
 } 
 
-#visits{
-    color: blue;
-    font-weight: bolder;
-    font-size: larger;
-}
 
 nav{
     max-width: 700px;
     margin: 1rem auto;
 } 
 
-
-
-
 nav{
-    background-color:#bed;
+    background-color:rgb(198, 50, 236);
     margin: auto;
     max-width: 800px;
 } 
@@ -122,7 +103,7 @@ nav ul {
 
 nav a {
     display: block;
-    color:black;
+    color: lightgray;
     text-align: center;
     padding: .5rem;
     text-decoration: none;
@@ -138,7 +119,7 @@ nav a:hover{
 
 
 nav .active{
-    background-color: deeppink;
+    background-color: rgb(188, 61, 128);
 }  
 
 
@@ -147,7 +128,7 @@ nav .active{
 } 
 
 .parent section{
-    border:1px solid pink;
+    border:1px solid black;
     background-color:lightpink;
     border-radius: 10px;
     overflow: hidden;
@@ -156,7 +137,7 @@ nav .active{
 
 .parent span{
     background-color: lightgray;
-    color:black;
+    color:rgb(142, 125, 125);
     display: block;
     text-align: center;
     padding: 0.75em 0;
@@ -318,11 +299,15 @@ ul.open.menuLinks{
 
 
 /* -- DARK MODE*/ 
-.dark-mode body{
-    background-color: #333;
-    color: #f0f0f0;
-}
 
+#darkmode{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+    cursor: pointer;
+    font-size: 2rem;
+}
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .card{
     border: 1px solid #5d6f67;
