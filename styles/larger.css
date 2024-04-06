@@ -24,7 +24,7 @@
             flex: 1 1 100%;
         }
     }
-   #button{
+   #ibutton{
       display: none;
     
    }
@@ -35,7 +35,7 @@
    }
 
 	ul.menuLinks a:hover{
-        color:aqua;
+        color:rgb(121, 210, 210);
     }
 
   

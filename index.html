@@ -22,11 +22,14 @@
    <header>
        <img src="images/ProfilePicture.webp" alt="Brea Romer Profile Picture" width="75" height="100">
        <h1>Brea Romer</h1> 
-       <button id="darkButton"></button>
-       <img src="images/dark-theme-svgrepo-com.svg" alt="darkmode" id="darktheme">
+
+       <div class="container">
+    
+        <button onclick="toggleDarkMode()"><img src="images/dark-theme-svgrepo-com.svg" alt="darkmode" id="darktheme"></button>
+       </div>
    </header>   
-
-
+    
+   
    <nav> 
        <button id="ibutton"></button>
        <ul class="menuLinks">
@@ -43,7 +46,7 @@
            <source srcset="images/hero-small.webp" media="(max-width:500px )">
            <source srcset="images/hero-medium.webp" media="(max-width:1000px )">
            <img src="images/hero-large.webp" alt="hero photo" width="500" height="250">
-           <source>Cedar City Utah Temple</source> 
+           <span>Cedar City Utah Temple</span> 
        </picture>
    </div>
 
@@ -61,9 +64,7 @@
                    <li>Week 3<a href="week03/images/landscape.jpg.webp">landscape</a> | <a href="week03/lazyload.html">lazy load</a> |<a href="/week03/responsive-images.html">Responsive</a> | <a href="/week03/bom.html">BOM Chapter</a></li>
                    <li>Week 4<a href="https://codepen.io/Brea-Romer/pen/rNbjWox">Pseudo-class </a>| <a href="/week04/images/Screenshot 2024-03-18 170134.png">Combinator exercises</a>|<a href="https://www.w3schools.com/css/exercise.asp?filename=exercise_combinators4">Combinator</a>|<a href="week04/Form-start/index.html">Form</a></li>
                    <li>Week 5<a  href="https://codepen.io/Brea-Romer/pen/mdgwNRG">codepen</a> <a href="https://jsonlint.com/">JSONlint</a>| <a href="/week05/prophets.html">Prophets</a> | <a href="/week05/weather.html">Weather</a></li> 
-                   <li>Week 6</li>
-                   <li>Week 7</li>
-               </ul> 
+               </ul>
            </section> 
           
  
@@ -73,7 +74,7 @@
                <h1>API Weather</h1>
                <div class="card">
                  <h2 id="country"></h2>
-                 <img id="graphic" src="icon" alt="graphic">
+                 <img id="graphic" src="" alt="">
                  <p id="description"></p>
                  <p id="temperature"></p>
                </div>
@@ -81,12 +82,7 @@
            </section>
        </div>
        <section>
-       <div class="ad">
-        <img src="member.image" alt="member.name">
-        <h3 id="member name"></h3>
-        <p id="member.description"></p>
-   </section> 
-   </div> 
+      
 
    </main> 
 
@@ -104,5 +100,5 @@
    <script src="scripts/weather.js"></script> 
    <script src="scripts/links.js"></script>
    <script src="scripts/darkmode.js"></script>
-   <script src="scripts/spotlight.js"></script>
+   
    

@@ -146,22 +146,20 @@ nav .active{
 .parent p{
     padding: 10px;
 } 
-
-
+/* -------------- Hero Image-------------*/
 .hero{
-    position: relative; 
-    
+    position: relative;
+}
+.hero picture{
+    width: 100%;
 } 
 
 .hero img{
     width: 100%;
     height: auto;
+    object-fit: cover;
     display: block;
-    padding: 2rem;
-} 
 
-.hero picture{
-    width: 100%;
 } 
 
 .herolabel{
@@ -187,9 +185,9 @@ nav .active{
 
 .hero span{
     position: absolute;
-    top: 50%;
-    left: 30%;
-   width: 30%;
+    top: 40%;
+    left: 20;
+    right: 0;
     background-color: rgba(225,225,225, 0.5);
     padding: 1rem; 
     text-align: center;
@@ -213,8 +211,10 @@ footer{
     background-color: #bed;
     color: black;
 }
-
-#button::before {
+.container{
+    flex-flow: column wrap;
+}
+#ibutton::before {
 	content: "\2630";
 }
 
@@ -252,9 +252,12 @@ nav{
     display: block;
 }
  
+#ibutton.open::before{
+    content: "X";
+}
 
 
-#button{
+#ibutton{
     font-size: 2rem;
     background: none;
     border: none;
@@ -269,15 +272,14 @@ nav{
 }
 
 ul.menuLinks li a{
-    border: none;
     display: block;
     padding: .75rem 2vw;
-    color:aqua;
+    color:#4499ef;
     text-decoration: none;
 } 
 
-li.current-menu-item a{
-    background-color: rgba(0, 0, 0, 0.2);
+ul .menulinks li.current-menu-item a{
+    color:orange;
 }
 
 ul.menuLinks{
@@ -285,13 +287,12 @@ ul.menuLinks{
     list-style-type: none;
 }
 
-#button.open::before{
-     content: "X";
-}
 
 ul.open.menuLinks{
     display: block;
-}
+} 
+
+
 
 
 
@@ -299,19 +300,27 @@ ul.open.menuLinks{
 
 
 /* -- DARK MODE*/ 
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
 
-#darkButton{
+.dark-mode{
+    background-color: #333;
+    color: #fff;
+}
+
+#darkbutton{
     position: absolute;
     top: 1rem;
     right: 1rem;
     font-size: 3rem;
     cursor: pointer;
     font-size: 2rem;
-} 
-#darkButton{
-    height: 44px;
-    width: 44px;
 }
+
+
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .card{
     border: 1px solid #5d6f67;
