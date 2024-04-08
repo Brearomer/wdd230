@@ -3,7 +3,7 @@ const city = 'Nassau';
 const country ='+1'; 
 
 
-fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${apiKey}&units=metric`)
+fetch(`api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}`)
     .then(response => response.json())
     .then(data =>{
         const currentWeather = document.getElementById('currentWeather');
@@ -18,7 +18,7 @@ fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid
         console.error('Error fetching current weather:',error);
     });
 
-fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${city},${country}&appid=${apiKey}&units=metric`)
+fetch(`api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}`)
         .then(response => response.json())
         .then(data =>{
             const forecast = document.getElementById('forecast');
