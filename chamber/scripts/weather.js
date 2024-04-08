@@ -1,66 +1,38 @@
-const currentWeather = document.querySelector('#weather');
-const currentForecast = document.querySelector('#forecast');
-const Temperature = document.querySelector('#temp');
+const apiKey = '81a46a5488c9937f09d0bad295c0919d';
+const city = 'Nassau';
+const country ='+1'; 
 
 
-
-
-const key ="81a46a5488c9937f09d0bad295c0919d"
-const lat = "25.12709"
-const long ="-77.31405"
-
-
-const url =`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${key}`
-
-  function fetchcurrentWeather(){
-    fetch(`//api.openweathermap.org/data/2.5/weather?q=${location}&appid=${key}&units=metric`)
+fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${apiKey}&units=metric`)
     .then(response => response.json())
     .then(data =>{
-        const currentWeatherDiv = document.getElementById('currentWeather');
-        currentWeatherDiv.innerHTML =
-        `<p> Temperature: ${data.main.temp}°C</p>
-         <p> Description:${data.weather[O].description}</p>  `;
- 
+        const currentWeather = document.getElementById('currentWeather');
+        const temperature = data.main.temp;
+        const description = data.weather[0].description;
+
+        currentWeather.innerHTML =`<p>Current Temperature: ${temperature}°C</p>`
+                           `<p>Current Weather Description: ${description}</p>`;
+                                
     }) 
-    .catch(error => console.log('Error fetching current weather:', error));
-}
+    .catch(error =>{
+        console.error('Error fetching current weather:',error);
+    });
 
-  function fetchForecast(){
-    fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${location}&appid=${key}&units=metric`)
-    .then(response => response.json())
-    .then(data =>{
-        const forecastDiv = document.getElementById('forecast');
-        forecastDiv.innerHTML ='';
-        for (let i = O; i < data.list.length; i += 8){
-            const forecast = data.list[i];
-            const date = new Date(forecast.dt * 1000);
-            forecastDiv.innerHTML +=` <p>Date: ${date.toDateString()}</p>
-            <p>Temperature: ${forecast.main.temp}°C</p>
-            <p>Description: ${forecast.weather[0].description}</p>
-        `;
-        }
-    })
-    .catch(error => console.log('Error fetching forecast:', error));
-} 
+fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${city},${country}&appid=${apiKey}&units=metric`)
+        .then(response => response.json())
+        .then(data =>{
+            const forecast = document.getElementById('forecast');
+            const forecastData = data.list.slice(0.8);
 
-window.onload = function(){
-    fetchcurrentWeather();
-    fetchForecast();
-};   
+          forecast.innerHTML = '<h2> Three-day Temperature Forecast:</h2>';
+          forecastData.forEach(entry =>{
+            const dateTime = entry.dt_txt;
+            const temperature = entry.main.temp;
+            const description = entry.weather[0].description;
+            forecast.innerHTML +=`<p>${dateTime}: ${temperature}°C, ${description}</p>`;
 
-async function apiFetch(){
-   try{
-      const response = await fetch(url);
-      if (response.ok) {
-        const data = await response.json();
-        console.log(data);
-        displayResults(data);
-      }
-   }  catch{
-       throw Error(await response.text());
-   }
-}
- 
-function displayResults(data) {
-    console.log('hello')
-}
+          });  
+     })  
+     .catch(error =>{
+        console.error('Error fetching forecast:', error);
+     }); 
