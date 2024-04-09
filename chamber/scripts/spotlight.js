@@ -19,7 +19,7 @@ getLinkData();
 const card = document.querySelector('#cards');
 
 function buildRandomList(){
-    for(i=0,i<3,i++)
+    for(i=0;i<3;i++);
     {
         let indexNumber = Math.floor(Math.random() * membersList);
         
@@ -31,5 +31,5 @@ function buildRandomList(){
         newCard.innerHTML =`<img src="${currentMember.pic}" alt="${currentMember.alt}"><p>"${currentMember.pic}" alt=${currentMemeber.alt}"><p>"${currentMember.slug}"<br><a href="${currentMember.web}" target="_blank">${currentMember.name}</a></p>`;
         card.appendChild(newCard);
     }
-
+   
 }

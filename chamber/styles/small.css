@@ -190,10 +190,19 @@ td:hover{
 
 
 /* Weather */
+body{
+    font-family: sans-serif;
+}
 
+.container{
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
 
-
-
+.forecast{
+    margin-top: 20px;
+}
 
 
 
@@ -206,66 +215,66 @@ td:hover{
 
 
 /* Company Spotlights Section Styles */
-.spotlight{
+.spotlight {
     max-width: 90%;
     margin: 0.5rem auto;
     grid-column: 1/-1;
-}
-#cards{
+    }
+     
+    #cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-} 
-
-.member{
+     
+    }
+     
+    .member {
     margin: 1rem auto;
-    border:3px solid black;
-    padding:2rem;
-    border-radius: 25px;
-    background-color: #fff;
-    box-shadow: 0px 0px 10px rgba(182,181,181,0.865);
-} 
-
-.member a{
+    border: 3px solid black;
+    padding: 2rem;
+    border-radius:  25px;
+    background-color: lightgrey;
+    box-shadow: 0px 0px 10px rgba(182, 181, 181, 0.865); }
+     
+    .member a {
     text-decoration: underline;
-} 
-
-.member img{
-    max-width: 100%;
-} 
-
-.member p::first-line{
-    font-weight:bold;
-}
-
-.spotlight a{
-    color: lightpink;
-}
-
-@media(min-width:700px){
-    #spot-head{
-        display:block;
     }
-} 
-
-@media(min-width:900px){
-    .events{
-        grid-area:2/1/3/3;
-        max-width: 80%;
-    }
-} 
-
-.events img{
+     
+    .member img {
     max-width: 100%;
-} 
+     
+    }
+     
+    .member p::first-line {
+    font-weight: bold;
+    }
+     
+    .spotlight a {
+    color: lightblue;
+    }
+     
+    @media (min-width: 700px) {
+    #spot-head {
+      display: block;
+    }
+    }
+    @media (min-width: 900px) {
+    .events {
+      grid-area: 2/1/3/3;
+      max-width: 80%;
+    }
+    .events img {
+      max-width: 100%;
+    }
+    .spotlight {
+      grid-area: 3/1/4/4;
+    }
+    .spotlight article {
+      max-width: 30%;
+    }
+    }
+    
 
-.spotlight{
-    grid-area: 3/1/4/4;
-} 
-
-.spotlight article{
-    max-width: 30%;
-}
 /* Form*/
 
 body{
@@ -526,10 +535,9 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color:#ed6290;
+    background-color:#9b214a;
     padding: 10px;
     text-align: center;
-
 } 
 
 .close-btn{
